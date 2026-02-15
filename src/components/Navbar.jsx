@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed w-full bg-black text-white px-6 py-5 flex justify-between items-center z-50">
+      <nav className="fixed w-full bg-black text-white  px-6 py-5 flex justify-between items-center z-50">
         <Link to="/" className="text-2xl font-bold text-yellow-500">
           LUXE BELTS
         </Link>
@@ -43,7 +43,7 @@ const Navbar = () => {
             animate={{ y: 0 }}
             exit={{ y: "-100%" }}
             transition={{ duration: 0.4 }}
-            className="fixed inset-0 bg-black text-white flex flex-col items-center justify-center gap-10 text-3xl z-40"
+            className="fixed inset-0 bg-black text-white uppercase flex flex-col items-center justify-center gap-10 text-3xl z-40"
           >
             {navLinks.map((link) => (
               <NavLink key={link.name} to={link.path}>
