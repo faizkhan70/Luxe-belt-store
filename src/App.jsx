@@ -11,20 +11,23 @@ import Contact from "./Pages/Contact";
 
 function App() {
   return (
-    <>
+    
+        <>
       <Navbar />
 
       <Routes>
-       <Route path="*" element={<Home />} />
+        <Route path="*" element={<Home />} />
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/catalog" element={<Catalog />} />
         <Route path="/custom" element={<Custom />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<Home />} />
       </Routes>
 
       <Footer />
     </>
+   
   );
 }
 
